@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="big_title">36sp</dimen>
+    <dimen name="big_width">300dp</dimen>
+    <dimen name="big_size">32dp</dimen>
+    <dimen name="medium_size">18sp</dimen>
+    <dimen name="upper_medium_size">24dp</dimen>
+</resources>

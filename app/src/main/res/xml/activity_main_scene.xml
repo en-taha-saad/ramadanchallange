@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition
+            app:constraintSetEnd="@id/end"
+            app:constraintSetStart="@+id/start"
+            motion:duration="2000">
+        <OnSwipe
+                app:dragDirection="dragDown"
+                app:touchAnchorId="@id/swipe_lottie"
+        />
+
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+                android:id="@+id/part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ramadan_routine"
+                android:background="@color/background"
+                android:visibility="invisible"
+
+        />
+
+        <Constraint
+                android:id="@+id/part2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/part1"
+                android:background="@color/background"
+                android:visibility="visible"
+                app:visibilityMode="ignore"
+
+        />
+
+    </ConstraintSet>
+</MotionScene>
